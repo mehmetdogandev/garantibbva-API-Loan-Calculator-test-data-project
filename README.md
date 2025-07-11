@@ -94,8 +94,8 @@ Custom Fields aşamasında platform olarak **"Hybrid"** seçin.
 Bu aşamada **Client ID** ve **Client Secret** bilgileriniz otomatik olarak üretilecektir. Bu bilgileri güvenli bir yerde saklayın!
 
 ```
-Client ID: l7edc5187a3ac348c091b9d042xxxxxxxx
-Client Secret: fc9d4c464f86432fbef45744xxxxxxxx
+Client ID: ldsasfagdgsdgfsddsadfa9d042xxxxxxxx
+Client Secret: safdsfasfasfasdfsadfsdfsxxxxxxxx
 ```
 
 ## 🚀 Kurulum
