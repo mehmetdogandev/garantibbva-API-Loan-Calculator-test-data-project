@@ -46,9 +46,12 @@ Bu proje, Garanti BBVA API Store'dan Loan Calculator API'sını kullanarak kredi
    - E-posta adresi
    - Şifre
    - Şirket bilgileri (opsiyonel)
+_________________________________________________________________________________________________________
+
 
 ![Kayıt Formu](images/garanti-bbva%20(developers.garantibbva.com.tr)/api-store-onay-mail.png)
 
+_________________________________________________________________________________________________________
 4. E-posta adresinize gelen aktivasyon linkini tıklayın
 
 ### 2. Uygulama Oluşturma
