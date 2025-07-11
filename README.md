@@ -2,7 +2,7 @@
 
 Bu proje, Garanti BBVA API Store'dan Loan Calculator API'sını kullanarak kredi hesaplama işlevselliği sunan bir PHP uygulamasıdır.
 
-![Garanti BBVA API Store](images/garanti-api-store-banner.png)
+![Garanti BBVA API Store](images/project-images/odeme_planı_listesi_sayfasi_grafikleri.png)
 
 ## 📋 İçindekiler
 
