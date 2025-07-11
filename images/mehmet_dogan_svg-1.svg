@@ -1,0 +1,195 @@
+<svg width="1000" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient tanımları -->
+    <linearGradient id="codeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff87;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#60efff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0099ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1421;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="neonGlow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Arka plan -->
+  <rect width="1000" height="600" fill="url(#bgGradient)"/>
+  
+  <!-- Terminal çerçevesi -->
+  <rect x="50" y="80" width="900" height="440" fill="#0f1419" stroke="#00ff87" stroke-width="2" rx="10" opacity="0.9"/>
+  <rect x="50" y="80" width="900" height="30" fill="#1e2329" stroke="#00ff87" stroke-width="2" rx="10"/>
+  
+  <!-- Terminal buttons -->
+  <circle cx="70" cy="95" r="6" fill="#ff5f56"/>
+  <circle cx="90" cy="95" r="6" fill="#ffbd2e"/>
+  <circle cx="110" cy="95" r="6" fill="#27ca3f"/>
+  
+  <!-- Terminal title -->
+  <text x="130" y="100" font-family="Monaco, Consolas, monospace" font-size="12" fill="#8cc8ff">
+    mehmet_dogan@developer: ~/projects
+  </text>
+  
+  <!-- Ana başlık: MEHMET DOĞAN -->
+  <text x="500" y="200" 
+        font-family="JetBrains Mono, Monaco, Consolas, monospace" 
+        font-size="48" 
+        font-weight="bold" 
+        text-anchor="middle" 
+        fill="url(#codeGradient)"
+        filter="url(#textGlow)">
+    &lt;MEHMET DOĞAN/&gt;
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="500" y="240" 
+        font-family="JetBrains Mono, Monaco, Consolas, monospace" 
+        font-size="20" 
+        text-anchor="middle" 
+        fill="#60efff"
+        opacity="0.8">
+    Software Engineer
+  </text>
+  
+  <!-- Email -->
+  <text x="500" y="265" 
+        font-family="JetBrains Mono, Monaco, Consolas, monospace" 
+        font-size="16" 
+        text-anchor="middle" 
+        fill="#ff7b72"
+        opacity="0.9">
+    📧 mehmetdogan.dev@gmail.com
+  </text>
+  
+  <!-- Kod satırları -->
+  <text x="80" y="300" font-family="Monaco, Consolas, monospace" font-size="14" fill="#ff7b72">
+    <tspan x="80" dy="0">const developer = {</tspan>
+    <tspan x="100" dy="20">name: "Mehmet Doğan",</tspan>
+    <tspan x="100" dy="20">role: "Software Engineer",</tspan>
+    <tspan x="100" dy="20">email: "mehmetdogan.dev@gmail.com",</tspan>
+    <tspan x="100" dy="20">skills: ["JavaScript", "Python", "React"],</tspan>
+    <tspan x="100" dy="20">passion: "Building amazing things",</tspan>
+    <tspan x="100" dy="20">status: "always_learning"</tspan>
+    <tspan x="80" dy="20">};</tspan>
+  </text>
+  <!-- Hareketli binary kodlar -->
+  <g id="binaryGroup">
+    <text x="800" y="170" font-family="Monaco, monospace" font-size="12" fill="#00ff87" opacity="0.6">
+      01001101 01000101
+      <animateTransform attributeName="transform" type="translate" values="0,0; -50,-10; 0,0" dur="3s" repeatCount="indefinite"/>
+    </text>
+    <text x="850" y="200" font-family="Monaco, monospace" font-size="12" fill="#60efff" opacity="0.5">
+      01001000 01000101
+      <animateTransform attributeName="transform" type="translate" values="0,0; 30,15; 0,0" dur="4s" repeatCount="indefinite"/>
+    </text>
+    <text x="780" y="230" font-family="Monaco, monospace" font-size="12" fill="#0099ff" opacity="0.4">
+      01010100 01010100
+      <animateTransform attributeName="transform" type="translate" values="0,0; -20,20; 0,0" dur="2.5s" repeatCount="indefinite"/>
+    </text>
+  </g>
+  
+  <!-- Animasyonlu dişliler -->
+  <g id="gear1" transform="translate(150,470)">
+    <circle cx="0" cy="0" r="25" fill="none" stroke="#00ff87" stroke-width="2" opacity="0.7"/>
+    <g>
+      <rect x="-3" y="-30" width="6" height="10" fill="#00ff87" opacity="0.7"/>
+      <rect x="-3" y="20" width="6" height="10" fill="#00ff87" opacity="0.7"/>
+      <rect x="-30" y="-3" width="10" height="6" fill="#00ff87" opacity="0.7"/>
+      <rect x="20" y="-3" width="10" height="6" fill="#00ff87" opacity="0.7"/>
+      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="4s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  
+  <g id="gear2" transform="translate(850,470)">
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#60efff" stroke-width="2" opacity="0.7"/>
+    <g>
+      <rect x="-2" y="-25" width="4" height="8" fill="#60efff" opacity="0.7"/>
+      <rect x="-2" y="17" width="4" height="8" fill="#60efff" opacity="0.7"/>
+      <rect x="-25" y="-2" width="8" height="4" fill="#60efff" opacity="0.7"/>
+      <rect x="17" y="-2" width="8" height="4" fill="#60efff" opacity="0.7"/>
+      <animateTransform attributeName="transform" type="rotate" values="360;0" dur="3s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  
+  <!-- Loading bar -->
+  <rect x="80" y="450" width="200" height="8" fill="#1e2329" stroke="#00ff87" stroke-width="1" rx="4"/>
+  <rect x="80" y="450" width="0" height="8" fill="url(#codeGradient)" rx="4">
+    <animate attributeName="width" values="0;200;0" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  <text x="80" y="470" font-family="Monaco, Consolas, monospace" font-size="10" fill="#8cc8ff">
+    Compiling awesome code...
+  </text>
+  
+  <!-- Hareketli pixel efekti -->
+  <g id="pixels">
+    <rect x="750" y="360" width="4" height="4" fill="#00ff87">
+      <animate attributeName="opacity" values="0;1;0" dur="1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="760" y="370" width="4" height="4" fill="#60efff">
+      <animate attributeName="opacity" values="0;1;0" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="770" y="360" width="4" height="4" fill="#0099ff">
+      <animate attributeName="opacity" values="0;1;0" dur="0.8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="780" y="375" width="4" height="4" fill="#ff7b72">
+      <animate attributeName="opacity" values="0;1;0" dur="1.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Cursor yanıp sönme efekti -->
+  <text x="220" y="420" font-family="Monaco, Consolas, monospace" font-size="16" fill="#00ff87">
+    |
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </text>
+  
+  <!-- Dekoratif kod elementleri -->
+  <text x="700" y="300" font-family="Monaco, Consolas, monospace" font-size="12" fill="#ff7b72" opacity="0.6">
+    function() {
+  </text>
+  <text x="720" y="320" font-family="Monaco, Consolas, monospace" font-size="12" fill="#79c0ff" opacity="0.6">
+    return "Hello World!";
+  </text>
+  <text x="700" y="340" font-family="Monaco, Consolas, monospace" font-size="12" fill="#ff7b72" opacity="0.6">
+    }
+  </text>
+  
+  <!-- Hareketli matrix efekti -->
+  <g id="matrix" opacity="0.3">
+    <text x="50" y="50" font-family="Monaco, monospace" font-size="10" fill="#00ff87">
+      01
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,500; 0,0" dur="5s" repeatCount="indefinite"/>
+    </text>
+    <text x="950" y="50" font-family="Monaco, monospace" font-size="10" fill="#60efff">
+      10
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,500; 0,0" dur="6s" repeatCount="indefinite"/>
+    </text>
+  </g>
+  
+  <!-- Neon çerçeve efekti -->
+  <rect x="30" y="60" width="940" height="480" 
+        fill="none" 
+        stroke="url(#codeGradient)" 
+        stroke-width="2" 
+        opacity="0.8"
+        rx="15"
+        filter="url(#neonGlow)">
+    <animate attributeName="opacity" values="0.8;0.4;0.8" dur="3s" repeatCount="indefinite"/>
+  </rect>
+</svg>

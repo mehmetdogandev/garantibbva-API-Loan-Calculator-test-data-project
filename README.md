@@ -68,14 +68,12 @@ ________________________________________________________________________________
 
 ### 3. Platform Seçimi
 
-![Platform Seçimi](images/platform-selection.png)
-
-Custom Fields aşamasında platform olarak **"Web Application"** seçin.
+![Platform Seçimi](images/garanti-bbva%20(developers.garantibbva.com.tr)/new-aplication-name-test.png)
+Custom Fields aşamasında platform olarak **"Hybrid"** seçin.
 
 ### 4. API Seçimi
 
-![API Seçimi](images/api-selection.png)
-
+![API Seçimi](images/garanti-bbva%20(developers.garantibbva.com.tr)/loan-calcilator-acces-active-and-sandbox-active.png)
 1. **"API Management"** aşamasında **"Loan Calculator"** API'sını seçin
 2. Hüküm & Koşulları kabul edin
 3. **"Next"** butonuna tıklayın
@@ -121,7 +119,7 @@ php -m | grep -E "(curl|json)"
 
 ### API Kimlik Bilgilerini Güncelleme
 
-`config.php` dosyasını açın ve aşağıdaki değerleri güncelleyin:
+`db_config.php` dosyasını açın ve aşağıdaki değerleri güncelleyin:
 
 ```php
 <?php
@@ -129,13 +127,6 @@ php -m | grep -E "(curl|json)"
 $clientId = 'YOUR_CLIENT_ID';        // API Store'dan aldığınız Client ID
 $clientSecret = 'YOUR_CLIENT_SECRET'; // API Store'dan aldığınız Client Secret
 
-// API Endpoint'leri
-$authUrl = 'https://apis.garantibbva.com.tr/auth/oauth/v2/token';
-$apiBaseUrl = 'https://apis.garantibbva.com.tr';
-$callbackUrl = 'http://localhost:3000/callback';
-
-// Test Ortamı (Sandbox)
-$isSandbox = true;
 ?>
 ```
 
@@ -148,8 +139,8 @@ $isSandbox = true;
 
 **Örnek:**
 ```php
-$clientId = 'l7edc5187a3ac348c091b9d042a1b2c3d4e5f6789'; 
-$clientSecret = 'fc9d4c464f86432fbef457441a2b3c4d5e6f7890';
+$clientId = 'erwesfdfd4757425445254432'; 
+$clientSecret = 'sdaseawdsasxzcxzs9684d54da';
 ```
 
 ## 🏃‍♂️ Çalıştırma
@@ -164,7 +155,7 @@ php -S localhost:3000
 
 ![PHP Sunucu Başlatma](images/php-server-start.png)
 
-**Not:** Port 3000 kullanımda ise farklı bir port kullanabilirsiniz:
+**Not:** Port 3000 kullanımda ise farklı bir port kullanabilirsiniz: ancak o zaman api yi oluştururken de o portu seçtirmeniz gerekiyor.
 
 ```bash
 php -S localhost:8080
@@ -179,7 +170,7 @@ Tarayıcınızı açın ve şu adrese gidin:
 http://localhost:3000
 ```
 
-![Uygulama Ana Sayfa](images/application-homepage.png)
+![Uygulama Ana Sayfa](images/project-images/odeme_planı_listesi_sayfasi_grafikleri.png)
 
 ## 💻 Kullanım
 
@@ -214,7 +205,7 @@ function getAccessToken($clientId, $clientSecret, $authUrl, $callbackUrl) {
 
 ### 2. Kredi Hesaplama
 
-![Kredi Hesaplama Formu](images/loan-calculator-form.png)
+![Kredi Hesaplama Formu](images/project-images/tum_odeme_planı_listesi.png)
 
 Formu doldurarak kredi hesaplaması yapabilirsiniz:
 
@@ -251,7 +242,7 @@ function calculateLoan($accessToken, $amount, $term, $interestRate) {
 
 ### 3. Sonuçları Görüntüleme
 
-![Hesaplama Sonuçları](images/calculation-results.png)
+![Hesaplama Sonuçları](images/project-images/en_iyi_secenekler.png)
 
 API'den dönen yanıt şu formatta olacaktır:
 
@@ -312,7 +303,7 @@ Content-Type: application/json
 }
 ```
 
-![API Request Example](images/api-request-example.png)
+![API Request Example](images/project-images/request-example.png)
 
 ## 🧪 Test Verileri
 
@@ -357,7 +348,6 @@ $errorTestCases = [
 ];
 ```
 
-![Test Sonuçları](images/test-results.png)
 
 ## 🐛 Sorun Giderme
 
@@ -365,12 +355,11 @@ $errorTestCases = [
 
 #### 1. "Invalid Client Credentials" Hatası
 
-![Invalid Credentials](images/error-invalid-credentials.png)
 
 **Sebep:** Client ID veya Client Secret yanlış
 **Çözüm:**
 - API Store'dan doğru Client ID ve Secret'ı kontrol edin
-- config.php dosyasındaki bilgileri güncelleyin
+- db_config.php dosyasındaki bilgileri güncelleyin
 
 #### 2. "Connection Timeout" Hatası
 
@@ -504,4 +493,4 @@ Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için `LICENSE` dosy
 - Günlük istek limiti: 10.000
 - Rate limiting: 10 req/saniye
 
-![Footer](images/footer-banner.png)
+![Footer](images/mehmet_dogan_svg-1.svg)

@@ -143,8 +143,7 @@ class GarantiBBVALoanCalculator
 
 // API kullanımı
 try {
-    $clientId = 'YOUR_CLIENT_ID'; // API Key
-    $clientSecret = 'YOUR_CLIENT_SECRET'; // API Secret
+   include $_SERVER['DOCUMENT_ROOT'] . '/config/db_config.php';
 
     $loanCalculator = new GarantiBBVALoanCalculator($clientId, $clientSecret);
 
