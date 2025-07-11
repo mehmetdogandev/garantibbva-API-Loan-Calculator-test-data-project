@@ -80,7 +80,7 @@ Custom Fields aşamasında platform olarak **"Hybrid"** seçin.
 
 ### 5. Authentication Ayarları
 
-![Authentication Ayarları](images/authentication-settings.png)
+![Authentication Ayarları](images/garanti-bbva%20(developers.garantibbva.com.tr)/add-new-key-page.png)
 
 1. **Callback URL**: `https://yourdomain.com/callback` (geliştirme için `http://localhost:3000/callback`)
 2. **Scope**: `OOB`
@@ -89,7 +89,7 @@ Custom Fields aşamasında platform olarak **"Hybrid"** seçin.
 
 ### 6. Client Credentials Alma
 
-![Client Credentials](images/client-credentials.png)
+![Client Credentials](images/garanti-bbva%20(developers.garantibbva.com.tr)/key-overview-section.png)
 
 Bu aşamada **Client ID** ve **Client Secret** bilgileriniz otomatik olarak üretilecektir. Bu bilgileri güvenli bir yerde saklayın!
 
