@@ -37,7 +37,7 @@ Bu proje, Garanti BBVA API Store'dan Loan Calculator API'sını kullanarak kredi
 
 ### 1. Garanti BBVA API Store'a Kayıt Olma
 
-![API Store Kayıt](images/api-registration-step1.png)
+![API Store Kayıt](images/garanti-bbva%20(developers.garantibbva.com.tr)/kayit-formu.png)
 
 1. [developers.garantibbva.com.tr](https://developers.garantibbva.com.tr) adresine gidin
 2. Sağ üst köşedeki **"KAYIT OL"** butonuna tıklayın
@@ -47,13 +47,13 @@ Bu proje, Garanti BBVA API Store'dan Loan Calculator API'sını kullanarak kredi
    - Şifre
    - Şirket bilgileri (opsiyonel)
 
-![Kayıt Formu](images/registration-form.png)
+![Kayıt Formu](images/garanti-bbva%20(developers.garantibbva.com.tr)/api-store-onay-mail.png)
 
 4. E-posta adresinize gelen aktivasyon linkini tıklayın
 
 ### 2. Uygulama Oluşturma
 
-![Uygulama Oluşturma](images/create-application.png)
+![Uygulama Oluşturma](images/garanti-bbva (developers.garantibbva.com.tr)/application-list-and-new-application.png)
 
 1. Giriş yaptıktan sonra **"Manage → Applications"** seçeneğine tıklayın
 2. **"Add Application"** butonuna tıklayın
@@ -61,7 +61,7 @@ Bu proje, Garanti BBVA API Store'dan Loan Calculator API'sını kullanarak kredi
    - **Application Name**: Loan Calculator Test App
    - **Description**: Kredi hesaplama test uygulaması
 
-![Uygulama Detayları](images/application-details.png)
+![Uygulama Detayları](images/garanti-bbva%20(developers.garantibbva.com.tr)/new-aplication-name-test.png)
 
 ### 3. Platform Seçimi
 
